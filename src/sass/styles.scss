@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './mixins';
+
+@import 
+'~bootstrap/scss/functions',
+'~bootstrap/scss/variables',
+'~bootstrap/scss/mixins',
+'~bootstrap/scss/print',
+'~bootstrap/scss/reboot',
+'~bootstrap/scss/type';
+
+.navbar{
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: cadetblue;
+}
+
+.current-matches{
+    margin-top: 25px;
+}

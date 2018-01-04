@@ -1,0 +1,18 @@
+<h4 class="display-5">Current Matches</h4>
+<div class="row mb-5" *ngFor="let parentArray of matches">
+  <div class="col-md-4" *ngFor="let match of parentArray">
+    <div class="card text-center my-flex-card ">
+        <div class="card-header">
+            {{match['team-1']}} vs {{match['team-2']}}
+        </div>
+        <div class="card-block">
+          <h4 class="card-title mb-4 mt-4">{{match.score}}</h4>
+          <h6 class="card-subtitle mb-2 text-muted">{{match.type}}</h6>
+        </div>
+        <div class="card-footer text-muted">
+            <small>{{match.dateTimeGMT |date:'MM/dd/yyyy @ h:mma'}}</small>
+        </div>
+    </div>
+  </div>
+  
+</div>
